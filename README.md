@@ -10,12 +10,12 @@ This project demonstrates coverage-guided fuzzing, code coverage analysis, and v
 
 **Target:** libpng v1.6.48 (fuzzing), v1.5.20 (exploitation)
 
-📄 **For detailed methodology and full report:** See `report.pdf`  
-📋 **For complete instructions:** See `Instructions.md`
+**For detailed methodology and full report:** See `report.pdf`  
+**For complete instructions:** See `Instructions.md`
 
 ---
 
-## 📊 Results Summary
+## Results Summary
 
 ### Part 1: Seed Corpus Impact Analysis
 
@@ -46,23 +46,23 @@ This project demonstrates coverage-guided fuzzing, code coverage analysis, and v
 
 ### Part 4: CVE-2014-9495 Exploitation
 
-Successfully exploited **heap buffer overflow** in libpng v1.5.20:
+Successfully exploited heap buffer overflow in libpng v1.5.20:
 - Integer overflow in Adam7 interlaced PNG processing
 - PoC triggers AddressSanitizer detection
 - Script: `part4/run.poc.sh`
 
 ---
 
-## 🏆 Achievements
+## Achievements
 
-✅ **Seed corpus impact:** +17% coverage improvement  
-✅ **Custom fuzzers:** 2 new variants (enhanced read + write fuzzer)  
-✅ **Novel coverage:** +1,270 lines of previously untested code  
-✅ **CVE exploitation:** Successful PoC for CVE-2014-9495
+- Seed corpus impact: +17% coverage improvement  
+- Custom fuzzers: 2 new variants (enhanced read + write fuzzer)  
+- Novel coverage: +1,270 lines of previously untested code  
+- CVE exploitation: Successful PoC for CVE-2014-9495
 
 ---
 
-## � Project Structure
+## Project Structure
 
 ```
 ├── part1/               # Seed corpus impact analysis
@@ -79,7 +79,7 @@ Successfully exploited **heap buffer overflow** in libpng v1.5.20:
 
 ---
 
-## � Quick Start
+## Quick Start
 
 ```bash
 # Part 1: Fuzzing experiments (4 hours each)
@@ -99,11 +99,13 @@ cd part4 && ./run.poc.sh
 firefox part1/report/w_corpus/linux/index.html
 ```
 
-## 👥 Group Members
+---
+
+## Group Members
 
 This security research project was completed collaboratively by:
 
-- **Mahdi Atallah**
-- **Rassene M'Sadaa**
-- **Yannik Krone**
-- **Yonathan Lanzmann**
+- Mahdi Atallah
+- Rassene M'Sadaa
+- Yannik Krone
+- Yonathan Lanzmann
